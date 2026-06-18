@@ -8,4 +8,4 @@ def home(request):
     'name' : 'Wagner Vinicius'
     })
 def contact(request):
-    return HttpResponse("Contact")
+    return render(request, 'recipes/contact.html')
