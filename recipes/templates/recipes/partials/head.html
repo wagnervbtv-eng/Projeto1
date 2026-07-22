@@ -78,7 +78,8 @@
 
         body {
             font-size: 1.6rem;
-            font-family: var(--font-primary)
+            font-family: var(--font-primary);
+            background: var(--color-gray-1);
         }
 
         h1,
@@ -92,11 +93,12 @@
         .container {
             max-width: 144rem;
             margin: 0 auto;
-            padding: var(--spacing-gutter-meduim)
+            padding: var(--spacing-gutter-meduim);
         }
 
         .main-header-container {
             background: var(--color-primary-dark);
+            padding: 2rem 0;
         }
 
         .main-logo {
@@ -113,7 +115,57 @@
         }
 
         .main-logo-icon {
-            margin-right: 1rem;
+            margin-right: 2rem;
+        }
+
+        .search-container {
+            padding: 1rem 0 0;
+        }
+
+        .search-form {
+            border: .2rem solid var(--color-primary-dark);
+            max-width: 64rem;
+            margin: 0 auto;
+            padding: 0rem 0rem;
+            border-radius: 0.2rem;
+            position: relative;
+            transition: border-color 300ms ease-in-out, box-shadow 300ms ease-in-out;
+        }
+
+        .search-input,
+        .search-button {
+            border: none;
+            background: none;
+            outline: none;
+            padding: .3rem;
+            transition: color 300ms ease-in-out;
+        }
+
+        .search-input {
+            width: 100%;
+            padding-right: 3.5rem;
+            font-size: 1.4rem;
+        }
+
+        .search-button {
+            position: absolute;
+            top: 0rem;
+            right: .4rem;
+            padding: .4rem .2rem;
+        }
+
+        .search-button:focus {
+            outline: 1px solid var(--color-primary);
+        }
+
+        .search-form:focus-within {
+            border-color: var(--color-primary);
+            box-shadow: 0 0 0 .2rem rgba(38, 159, 230, .2);
+            background: var(--color-white);
+        }
+
+        .search-form:focus-within .search-button {
+            color: var(--color-primary);
         }
     </style>
 </head>
